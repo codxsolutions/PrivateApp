@@ -11,7 +11,14 @@
     tools:context="br.com.private_codx.aprivate.ActivityPrincipal">
 
     <TextView
+        android:id="@+id/txt1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt1"
+        android:text="teste" />
 </RelativeLayout>
