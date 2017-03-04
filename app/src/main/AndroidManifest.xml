@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="br.com.private_codx.aprivate">
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_logo"
-        android:supportsRtl="true"
         android:label="@string/app_name"
+        android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity android:name=".ActivityPrincipal">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -15,6 +15,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".PerguntasActivity"></activity>
     </application>
 
 </manifest>
