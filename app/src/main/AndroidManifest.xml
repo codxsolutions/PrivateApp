@@ -9,14 +9,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".ActivityPrincipal">
+
+        </activity>
+        <activity android:name=".PerguntasActivity" />
+        <activity android:name=".ActivityPesquisa" />
+
+        <activity android:name=".Load_Activity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PerguntasActivity" />
-        <activity android:name=".ActivityPesquisa"></activity>
     </application>
 
 </manifest>
