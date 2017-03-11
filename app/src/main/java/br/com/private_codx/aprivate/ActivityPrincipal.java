@@ -15,7 +15,7 @@ public class ActivityPrincipal extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
 
-        Button btnPerguntas = (Button) findViewById(R.id.btnPerguntass);
+        Button btnPerguntas = (Button) findViewById(R.id.btnPerguntas);
         btnPerguntas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -23,5 +23,15 @@ public class ActivityPrincipal extends AppCompatActivity {
                 startActivity(it);
             }
         });
+
+        Button btnPesquisa = (Button) findViewById(R.id.btnPesquisa);
+        btnPesquisa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(getApplicationContext(), ActivityPesquisa.class);
+            }
+        });
+
+
     }
 }

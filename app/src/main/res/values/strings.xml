@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Private</string>
     <string name="btnPerguntas">Perguntas</string>
+    <string name="btnPesquisa">Pesquisar</string>
 </resources>

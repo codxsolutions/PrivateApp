@@ -21,11 +21,17 @@
 
 
         <!--Componentes da Activity-->
-<Button
-    android:id="@+id/btnPerguntass"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="@string/btnPerguntas"/>
+        <Button
+            android:id="@+id/btnPerguntas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnPerguntas"/>
+        <Button
+            android:id="@+id/btnPesquisa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnPesquisa"
+            android:layout_below="@id/btnPerguntas"/>
 
     </RelativeLayout>
 </RelativeLayout>
