@@ -19,7 +19,7 @@ public class ActivityPrincipal extends AppCompatActivity {
         btnPerguntas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent it = new Intent(getApplicationContext(), PerguntasActivity.class);
+                Intent it = new Intent(ActivityPrincipal.this, PerguntasActivity.class);
                 startActivity(it);
             }
         });

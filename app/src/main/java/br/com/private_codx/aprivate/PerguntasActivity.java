@@ -2,8 +2,9 @@ package br.com.private_codx.aprivate;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 
-public class PerguntasActivity extends Activity {
+public class PerguntasActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
