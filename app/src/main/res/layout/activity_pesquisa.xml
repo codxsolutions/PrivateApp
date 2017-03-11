@@ -20,6 +20,7 @@
         android:id="@+id/tags"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/edittxt1"/>
+        android:layout_below="@id/edittxt1"
+        />
 
 </RelativeLayout>

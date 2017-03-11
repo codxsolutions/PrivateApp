@@ -11,4 +11,6 @@
     android:background="@color/corSecundaria"
     tools:context="br.com.private_codx.aprivate.PerguntasActivity">
 
+
+
 </RelativeLayout>
