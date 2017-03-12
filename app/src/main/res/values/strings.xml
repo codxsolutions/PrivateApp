@@ -7,4 +7,9 @@
         <item>Cinema</item>
         <item>Irineu</item>
     </string-array>
+    <string-array name="order">
+        <item>Nome</item>
+        <item>Data</item>
+        <item>Dougras</item>
+    </string-array>
 </resources>
