@@ -11,8 +11,7 @@
         <activity android:name=".ActivityPrincipal">
 
         </activity>
-        <activity android:name=".PerguntasActivity" />
-
+        <activity android:name=".ActivityPerguntas" />
         <activity android:name=".ActivityPesquisa" />
 
         <activity android:name=".Load_Activity"

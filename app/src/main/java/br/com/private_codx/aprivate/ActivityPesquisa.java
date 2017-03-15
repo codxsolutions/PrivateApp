@@ -21,13 +21,8 @@ public class ActivityPesquisa extends AppCompatActivity {
 // Apply the adapter to the spinner
         spinner.setAdapter(adapter);
 
-/*
-        Spinner spinnerorder = (Spinner) findViewById(R.id.order);
-        ArrayAdapter<CharSequence> adapter1 = ArrayAdapter.createFromResource(this,
-                R.array.order, android.R.layout.simple_spinner_item);
-        adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerorder.setAdapter(adapter1);
-*/
+
+
     }
 
 }

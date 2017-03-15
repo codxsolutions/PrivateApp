@@ -11,7 +11,8 @@
         <item>Cinema</item>
         <item>Irineu</item>
     </string-array>
-    <string-array name="order">
+
+    <string-array name="nArray">
         <item>Nome</item>
         <item>Data</item>
         <item>Dougras</item>
