@@ -25,17 +25,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".LoginActivity"
-            android:label="@string/title_activity_login" />
         <activity android:name=".ComentarioActivity" />
         <activity android:name=".RankingActivity" />
         <activity android:name=".CadastroActivity" />
-        <activity android:name=".PerguntarActivity" />
         <activity android:name=".PerfilActivity" />
         <activity android:name=".SettingsActivity" />
         <activity android:name=".MinhasPerguntasActivity" />
-        <activity android:name=".RecomendadasActivity"></activity>
+        <activity android:name=".RecomendadasActivity" />
+        <activity android:name=".fragments.cardView_perguntas" />
+        <activity android:name=".fragments.recyclerView_perguntas"></activity>
     </application>
 
 </manifest>
