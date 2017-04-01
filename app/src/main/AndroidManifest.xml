@@ -13,11 +13,11 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ActivityPrincipal" />
-        <activity android:name=".ActivityPerguntas" />
-        <activity android:name=".ActivityPesquisa" />
+        <activity android:name=".views.ActivityPrincipal" />
+        <activity android:name=".views.ActivityPerguntas" />
+        <activity android:name=".views.ActivityPesquisa" />
         <activity
-            android:name=".Load_Activity"
+            android:name=".views.Load_Activity"
             android:theme="@style/Theme.AppCompat.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,15 +25,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ComentarioActivity" />
-        <activity android:name=".RankingActivity" />
-        <activity android:name=".CadastroActivity" />
-        <activity android:name=".PerfilActivity" />
-        <activity android:name=".SettingsActivity" />
-        <activity android:name=".MinhasPerguntasActivity" />
-        <activity android:name=".RecomendadasActivity" />
-        <activity android:name=".fragments.cardView_perguntas" />
-        <activity android:name=".fragments.recyclerView_perguntas"></activity>
+        <activity android:name=".views.ComentarioActivity" />
+        <activity android:name=".views.RankingActivity" />
+        <activity android:name=".views.CadastroActivity" />
+        <activity android:name=".views.PerfilActivity" />
+        <activity android:name=".views.SettingsActivity" />
+        <activity android:name=".views.MinhasPerguntasActivity" />
+        <activity android:name=".views.RecomendadasActivity" />
+        <activity android:name=".views.fragments.cardView_perguntas" />
+        <activity android:name=".views.fragments.recyclerView_perguntas"></activity>
     </application>
 
 </manifest>

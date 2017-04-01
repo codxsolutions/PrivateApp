@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="br.com.private_codx.aprivate.fragments.recyclerView_perguntas">
+    tools:context=".views.fragments.recyclerView_perguntas">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/my_recycler_view"

@@ -1,10 +1,11 @@
-package br.com.private_codx.aprivate;
+package br.com.private_codx.aprivate.views;
 
 import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Window;
+
+import br.com.private_codx.aprivate.R;
 
 public class Load_Activity extends AppCompatActivity {
 

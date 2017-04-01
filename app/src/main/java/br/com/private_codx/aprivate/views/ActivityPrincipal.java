@@ -1,4 +1,4 @@
-package br.com.private_codx.aprivate;
+package br.com.private_codx.aprivate.views;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +7,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+
+import br.com.private_codx.aprivate.R;
 
 public class ActivityPrincipal extends AppCompatActivity {
 
