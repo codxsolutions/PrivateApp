@@ -12,7 +12,7 @@
         <item>Irineu</item>
     </string-array>
 
-    <string-array name="nArray">
+    <string-array name="order">
         <item>Nome</item>
         <item>Data</item>
         <item>Dougras</item>
