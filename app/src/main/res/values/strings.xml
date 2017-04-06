@@ -3,8 +3,12 @@
     <string name="app_name">Private</string>
     <string name="btnPerguntas">Perguntas</string>
     <string name="btnPesquisa">Pesquisar</string>
+    <string name="btnPerguntar">Perguntar</string>
     <string name="configuracoes">Configurações</string>
     <string name="logout">Logout</string>
+    <string name="privado">Privado</string>
+    <string name="btnEnviar">Enviar</string>
+    <string name="btnCancelar">Cancelar</string>
     <!--STRINGS DO ALISSON-->
     <string-array name="tags">
         <item>Esporte</item>

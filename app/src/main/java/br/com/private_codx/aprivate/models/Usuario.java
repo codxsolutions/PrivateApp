@@ -5,7 +5,7 @@ package br.com.private_codx.aprivate.models;
  */
 
 public class Usuario {
-    private long id_usuario;
+    private String id_usuario;
     private String nome;
     private String sobrenome;
     private String email;
@@ -14,11 +14,11 @@ public class Usuario {
     private int cont_respostas;
 
 
-    public long getId_usuario() {
+    public String getId_usuario() {
         return id_usuario;
     }
 
-    public void setId_usuario(long id_usuario) {
+    public void setId_usuario(String id_usuario) {
         this.id_usuario = id_usuario;
     }
 

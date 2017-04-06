@@ -32,6 +32,12 @@
             android:layout_height="wrap_content"
             android:text="@string/btnPesquisa"
             android:layout_below="@id/btnPerguntas"/>
+        <Button
+            android:id="@+id/btnPerguntar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnPerguntar"
+            android:layout_below="@id/btnPesquisa"/>
 
     </RelativeLayout>
 </RelativeLayout>
