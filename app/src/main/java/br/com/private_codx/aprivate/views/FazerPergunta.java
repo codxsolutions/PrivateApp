@@ -12,7 +12,7 @@ import br.com.private_codx.aprivate.presenters.PerguntaPresenter;
 
 import br.com.private_codx.aprivate.R;
 
-public class PerguntarActivity extends AppCompatActivity {
+public class FazerPergunta extends AppCompatActivity {
 
     PerguntaPresenter salvar = new PerguntaPresenter();
     private String edtPergunta;
@@ -25,14 +25,12 @@ public class PerguntarActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pergunta);
+        setContentView(R.layout.fazer_pergunta);
         edtPerguntaView = (EditText) findViewById(R.id.edtPerguntar);
         btnEnviar = (Button) findViewById(R.id.btnEnviarPergunta);
         btnCancelar = (Button) findViewById(R.id.btnCancelarPergunta);
         switchPrivado = (Switch) findViewById(R.id.switchPrivado);
         txtxMensagem = (TextView) findViewById(R.id.txtvMensagem);
-
-
     }
 
     public void enviarPergunta(View view){

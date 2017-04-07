@@ -34,7 +34,7 @@
         <activity android:name=".views.RecomendadasActivity" />
         <activity android:name=".views.fragments.cardView_perguntas" />
         <activity android:name=".views.fragments.recyclerView_perguntas" />
-        <activity android:name=".views.PerguntarActivity"></activity>
+        <activity android:name=".views.FazerPergunta"></activity>
     </application>
 
 </manifest>
