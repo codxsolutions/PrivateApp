@@ -1,15 +1,22 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="br.com.private_codx.aprivate.views.ActivityPrincipal">
+    tools:context="br.com.private_codx.aprivate">
     <item
-        android:id="@+id/action_configuracoes"
+        android:id="@+id/act_config"
         android:orderInCategory="100"
-        android:title="@string/configuracoes"
+        android:title="@string/menu_config"
         app:showAsAction="never" />
+
     <item
-        android:id="@+id/action_logout"
+        android:id="@+id/act_sobre"
         android:orderInCategory="100"
-        android:title="@string/logout"
+        android:title="@string/menu_sobre"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/act_sair"
+        android:orderInCategory="100"
+        android:title="@string/menu_sair"
         app:showAsAction="never" />
 </menu>
