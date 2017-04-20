@@ -25,11 +25,11 @@ public class ActivityPrincipal extends AppCompatActivity {
         setSupportActionBar(aToolbar);
 
         //Botões
-        Button btnPerguntas = (Button) findViewById(R.id.btnPerguntas);
+        Button btnPerguntas = (Button) findViewById(R.id.btnPerfil);
         btnPerguntas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent it = new Intent(getApplicationContext(), ActivityPerguntas.class);
+                Intent it = new Intent(getApplicationContext(), PerfilActivity.class);
                 startActivity(it);
             }
         });

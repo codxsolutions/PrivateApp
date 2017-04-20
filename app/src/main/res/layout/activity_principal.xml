@@ -35,63 +35,83 @@
     </LinearLayout>
 
 
-
-    <RelativeLayout
-        android:layout_width="wrap_content"
+    <!--Componentes da Activity-->
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@id/toolbar_layout"
         android:layout_alignParentBottom="true">
 
-
-        <!--Componentes da Activity-->
-
-        <Button
-            android:id="@+id/btnPerguntar"
+        <!--Primeira coluna de botões-->
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/btnPerguntar"
-             />
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/linear1"
+            android:layout_weight="1"
+            >
 
-        <Button
-            android:id="@+id/btnPesquisa"
+            <Button
+                android:id="@+id/btnPerguntar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_perguntar"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/btnPesquisa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/ic_pesquisar"
+                android:layout_below="@+id/btnPerguntar"/>
+
+            <Button
+                android:id="@+id/btnPerfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/ic_perfil"
+                android:layout_below="@id/btnPesquisa" />
+
+        </LinearLayout>
+
+        <!--Segunda coluna de botões-->
+        <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/btnPesquisa"
-            android:layout_below="@id/btnPerguntar" />
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/linear2"
+            android:layout_weight="1"
+            >
 
-        <Button
-            android:id="@+id/btnPerguntas"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/btnPerguntas"
-            android:layout_below="@id/btnPesquisa" />
+            <Button
+                android:id="@+id/btnRanking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/ic_ranking"/>
 
-        <Button
-            android:id="@+id/btnRanking"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Rank"
-            android:layout_below="@+id/btnPerguntas" />
+            <Button
+                android:id="@+id/btnMinhasPerguntas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_below="@+id/btnRanking"
+                android:background="@drawable/ic_minhas_perguntas"/>
 
-        <Button
-            android:id="@+id/btnMinhasPerguntas"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Minhas"
-            android:layout_below="@+id/btnRanking" />
+            <Button
+                android:id="@+id/btnRecomendadas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_below="@+id/btnMinhasPerguntas"
+                android:background="@drawable/ic_recomendadas"/>
 
-        <Button
-            android:id="@+id/btnRecomendadas"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Reco"
-            android:layout_below="@+id/btnMinhasPerguntas" />
+        </LinearLayout>
 
-    </RelativeLayout>
-
-
-
+    </LinearLayout>
 
 </RelativeLayout>
