@@ -18,6 +18,15 @@
     <string name="nome_Recomendadas">Perguntas Recomendadas</string>
     <string name="nome_Cadastro">Cadastro</string>
 
+    <!--Tags-->
+    <string name="chkCinema">Cinema</string>
+    <string name="chkEsporte">Esporte</string>
+    <string name="chkMusica">Música</string>
+    <string name="chkHumor">Humor</string>
+    <string name="chkCuriosidade">Curiosidade</string>
+    <string name="chkSaude">Saude</string>
+    <string name="chk18">+18</string>
+    <string name="chkOutros">Outros</string>
 
 
     <!--STRINGS / TEXTOS-->
@@ -27,9 +36,10 @@
     <string name="btnPerguntar">Perguntar</string>
     <string name="configuracoes">Configurações</string>
     <string name="logout">Logout</string>
-    <string name="privado">Privado</string>
-    <string name="btnEnviar">Enviar</string>
-    <string name="btnCancelar">Cancelar</string>
+    <string name="anonimo">Anônimo</string>
+    <string name="btnEnviar">E n v i a r</string>
+    <string name="btnCancelar">C a n c e l a r</string>
+    <string name="texto_pergunta">Escreva sua pergunta aqui!</string>
 
 
     <!--STRINGS DO ALISSON-->

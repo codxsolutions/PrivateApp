@@ -21,7 +21,7 @@ public class FazerPergunta extends AppCompatActivity {
     private String edtPergunta;
     private Button btnEnviar;
     private Button btnCancelar;
-    private Switch switchPrivado;
+    private Switch switchAnonimo;
     private TextView txtxMensagem;
     private EditText edtPerguntaView;
 
@@ -34,11 +34,10 @@ public class FazerPergunta extends AppCompatActivity {
         aToolbar = (Toolbar)findViewById(R.id.toolbar_perguntar);
         setSupportActionBar(aToolbar);
 
-        edtPerguntaView = (EditText) findViewById(R.id.edtPerguntar);
+        edtPerguntaView = (EditText) findViewById(R.id.editPergunta);
         btnEnviar = (Button) findViewById(R.id.btnEnviarPergunta);
         btnCancelar = (Button) findViewById(R.id.btnCancelarPergunta);
-        switchPrivado = (Switch) findViewById(R.id.switchPrivado);
-        txtxMensagem = (TextView) findViewById(R.id.txtvMensagem);
+        switchAnonimo = (Switch) findViewById(R.id.switchAnonimo);
     }
 
 
