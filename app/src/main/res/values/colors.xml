@@ -4,7 +4,7 @@
     <color name="corSecundaria">#3d3d3d</color>
     <color name="colorAccent">#0080ff</color>
     <color name="bg_color">#000000</color>
-    <color name="branco">#ffffff</color>
-    <color name="cinza_claro">#8f8e8e</color>
+    <color name="branco">#FFFFFF</color>
+    <color name="cinza_claro">#696969</color>
     <color name="preto">#000000</color>
 </resources>

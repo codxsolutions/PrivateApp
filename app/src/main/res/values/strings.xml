@@ -37,9 +37,11 @@
     <string name="configuracoes">Configurações</string>
     <string name="logout">Logout</string>
     <string name="anonimo">Anônimo</string>
-    <string name="btnEnviar">E n v i a r</string>
-    <string name="btnCancelar">C a n c e l a r</string>
+    <string name="btnEnviar">Enviar</string>
+    <string name="btnCancelar">Cancelar</string>
     <string name="texto_pergunta">Escreva sua pergunta aqui!</string>
+    <string name="texto_tag">Tags</string>
+
 
 
     <!--STRINGS DO ALISSON-->

@@ -5,212 +5,223 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/corSecundaria"
-    tools:context="br.com.private_codx.aprivate.views.FazerPergunta"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context="br.com.private_codx.aprivate.views.FazerPergunta">
 
 
     <!--Toolbar-->
     <LinearLayout
+        android:id="@+id/toolbar_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:id="@+id/toolbar_layout">
+        android:layout_alignParentTop="true">
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar_perguntar"
-            android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:minHeight="?attr/actionBarSize"
-            android:background="@color/corPrimaria"
+            android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true">
+            android:layout_alignParentStart="true"
+            android:background="@color/corPrimaria"
+            android:minHeight="?attr/actionBarSize">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="@string/nome_Perguntar"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                />
 
         </android.support.v7.widget.Toolbar>
     </LinearLayout>
 
-
-    <!-- Componentes -->
-    <RelativeLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingLeft="15dp"
-        android:paddingRight="15dp"
-        android:paddingTop="20dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/toolbar_layout">
+        android:layout_below="@id/toolbar_layout">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/linear1">
-
-        <EditText
-            android:id="@+id/editPergunta"
-            android:layout_width="match_parent"
-            android:layout_height="220dp"
-            android:background="@color/cinza_claro"
-            android:textColor="@color/bg_color"
-            android:hint="@string/texto_pergunta"
-            android:textColorHint="@color/bg_color"
-            android:textAlignment="center"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            />
-    </LinearLayout>
-
+        <!-- Componentes -->
         <RelativeLayout
-            android:layout_width="wrap_content"
+            android:id="@+id/layoutComponentes"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@id/linear1">
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="20dp">
 
-            <Switch
-                android:layout_width="wrap_content"
+            <!-- EditText(fazer pergunta) e TextView(quantidade caracteres) -->
+            <LinearLayout
+                android:id="@+id/layoutCaixaPergunta"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/anonimo"
-                android:checked="true"
-                android:id="@+id/switchAnonimo"
-                android:layout_marginTop="36dp"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginRight="17dp"
-                android:layout_marginEnd="17dp" />
+                android:orientation="vertical">
 
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/switchAnonimo"
-                android:id="@+id/layoutTags"
-                android:layout_above="@+id/btnEnviarPergunta"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:paddingLeft="20dp">
+                <EditText
+                    android:id="@+id/editPergunta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/caixa_editview"
+                    android:hint="@string/texto_pergunta"                android:textAlignment="center"
+                    android:textColor="@color/branco"
+                    android:textSize="23sp"/>
 
                 <TextView
+                android:id="@+id/txtMensagem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right" />
+
+            </LinearLayout>
+
+            <!-- Switch(Chave Anonimo) -->
+            <RelativeLayout
+                android:id="@+id/layoutChave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutCaixaPergunta"
+                android:layout_marginTop="20dp">
+                <Switch
+                    android:id="@+id/chaveAnonimo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Tags:"
+                    android:text="@string/anonimo"
+                    android:checked="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp" />
+
+            </RelativeLayout>
+
+            <!-- Checkboxes(tags de seleção) -->
+            <RelativeLayout
+                android:id="@+id/layoutCheckboxes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutChave"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/caixa_conteudo">
+
+                <TextView
+                    android:id="@+id/lblTags"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/texto_tag"
                     android:textSize="25sp"
-                    android:textColor="@color/branco"
-                    android:id="@+id/txtTag"
-                    />
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"/>
+
                 <CheckBox
+                    android:id="@+id/chkCinema"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/chkCinema"
                     android:textSize="20sp"
-                    android:layout_below="@id/txtTag"
-                    android:id="@+id/chkCinema"
-                    />
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/chkEsporte"
-                    android:textSize="20sp"
-                    android:layout_below="@id/chkCinema"
-                    android:id="@+id/chkEsporte"
-                    />
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/chkMusica"
-                    android:textSize="20sp"
-                    android:layout_below="@id/chkEsporte"
-                    android:id="@+id/chkMusica"
-                    />
-                <CheckBox
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/chkHumor"
-                    android:textSize="20sp"
-                    android:layout_below="@id/chkMusica"
-                    android:id="@+id/chkHumor"
-                    />
+                    android:layout_below="@id/lblTags"
+                    android:layout_marginLeft="15dp"/>
 
                 <CheckBox
+                    android:id="@+id/chkCuriosidade"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/chkCuriosidade"
                     android:textSize="20sp"
-                    android:id="@+id/chkCuriosidade"
-                    android:layout_above="@+id/chkEsporte"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginRight="35dp"
-                    android:layout_marginEnd="35dp" />
+                    android:layout_below="@id/chkCinema"
+                    android:layout_marginLeft="15dp"/>
 
                 <CheckBox
+                    android:id="@+id/chkEsporte"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/chkSaude"
+                    android:text="@string/chkEsporte"
                     android:textSize="20sp"
-                    android:id="@+id/chkSaude"
-                    android:layout_below="@+id/chkCuriosidade"
-                    android:layout_alignLeft="@+id/chkCuriosidade"
-                    android:layout_alignStart="@+id/chkCuriosidade" />
+                    android:layout_below="@id/chkCuriosidade"
+                    android:layout_marginLeft="15dp"/>
 
                 <CheckBox
+                    android:id="@+id/chkHumor"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/chk18"
+                    android:text="@string/chkHumor"
                     android:textSize="20sp"
-                    android:id="@+id/chk18"
-                    android:layout_below="@+id/chkSaude"
-                    android:layout_alignLeft="@+id/chkCuriosidade"
-                    android:layout_alignStart="@+id/chkCuriosidade" />
+                    android:layout_below="@id/chkEsporte"
+                    android:layout_marginLeft="15dp"/>
 
                 <CheckBox
+                    android:id="@+id/chkMusica"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/chkOutros"
                     android:textSize="20sp"
+                    android:layout_toRightOf="@id/lblTags"
+                    android:text="@string/chkMusica"
+                    android:layout_below="@id/lblTags"
+                    android:layout_marginLeft="25dp"/>
+
+                <CheckBox
                     android:id="@+id/chkOutros"
-                    android:layout_below="@+id/chk18"
-                    android:layout_alignLeft="@+id/chkCuriosidade"
-                    android:layout_alignStart="@+id/chkCuriosidade" />
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_toRightOf="@id/lblTags"
+                    android:text="@string/chkOutros"
+                    android:layout_below="@id/chkMusica"
+                    android:layout_marginLeft="25dp"/>
+
+                <CheckBox
+                    android:id="@+id/chkSaude"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_toRightOf="@id/lblTags"
+                    android:text="@string/chkSaude"
+                    android:layout_below="@id/chkOutros"
+                    android:layout_marginLeft="25dp"/>
+
+                <CheckBox
+                    android:id="@+id/chk18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:layout_toRightOf="@id/lblTags"
+                    android:text="@string/chk18"
+                    android:layout_below="@id/chkSaude"
+                    android:layout_marginLeft="25dp"/>
 
             </RelativeLayout>
 
-            <Button
-                android:background="@drawable/botao_azul_arrdondado"
-                android:text="@string/btnEnviar"
-                android:layout_width="140dp"
-                android:layout_height="70dp"
-                android:layout_marginLeft="26dp"
-                android:layout_marginStart="26dp"
-                android:layout_marginBottom="23dp"
-                android:id="@+id/btnEnviarPergunta"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:onClick="enviarPergunta" />
+            <!-- Button(botões de enviar e cancelar) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_below="@id/layoutCheckboxes"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
 
-            <Button
-                android:background="@drawable/botao_azul_arrdondado"
-                android:layout_width="140dp"
-                android:layout_height="70dp"
-                android:text="@string/btnCancelar"
-                android:id="@+id/btnCancelarPergunta"
-                android:layout_alignBottom="@+id/btnEnviarPergunta"
-                android:layout_alignParentRight="true"
-                android:layout_marginRight="26dp"
-                android:layout_alignParentEnd="true" />
+                <Button
+                    android:id="@+id/btnCancelarPergunta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/botao_azul"
+                    android:onClick="cancelar"
+                    android:text="@string/btnCancelar" />
+
+                <Button
+                    android:id="@+id/btnEnviarPergunta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginStart="24dp"
+                    android:background="@drawable/botao_azul"
+                    android:onClick="enviarPergunta"
+                    android:text="@string/btnEnviar" />
+
+            </LinearLayout>
+
         </RelativeLayout>
-
-    </RelativeLayout>
-
+    </ScrollView>
 </RelativeLayout>
+
