@@ -30,6 +30,7 @@ import br.com.private_codx.aprivate.presenters.PerguntaPresenter;
 import br.com.private_codx.aprivate.R;
 
 public class FazerPergunta extends AppCompatActivity {
+    //Variáveis
     private Toolbar aToolbar; //Declarando a Toolbar
     private PerguntaPresenter salvar = new PerguntaPresenter();
     private List<CheckBox> checkBoxes = new ArrayList<>();
@@ -41,6 +42,7 @@ public class FazerPergunta extends AppCompatActivity {
     private EditText edtPerguntaView;
     private int contCaracteres = 150;
     private int tamanho = 0;
+
     //checkboxes
     private CheckBox chkCinema;
     private CheckBox chkEsporte;

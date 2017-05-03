@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_responder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.private_codx.aprivate.ResponderActivity">
+
+    <!--Toolbar-->
+    <LinearLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_responder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/corPrimaria"
+            android:minHeight="?attr/actionBarSize">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/nome_responder"
+                android:textSize="16sp"
+                />
+
+        </android.support.v7.widget.Toolbar>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_layout">
+
+
+        <!-- Componentes -->
+        <RelativeLayout
+            android:id="@+id/layoutComponentes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="20dp">
+
+        <!-- EditText(fazer pergunta) e TextView(quantidade caracteres) -->
+            <LinearLayout
+                android:id="@+id/layoutCaixaResponder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editPergunta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/caixa_editview"
+                    android:hint="@string/texto_responder"                android:textAlignment="center"
+                    android:textColor="@color/branco"
+                    android:textSize="23sp"/>
+
+                <TextView
+                    android:id="@+id/txtMensagem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right" />
+
+            </LinearLayout>
+
+            <!-- Switch(Chave Anonimo) -->
+            <RelativeLayout
+                android:id="@+id/layoutChave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutCaixaResponder"
+                android:layout_marginTop="20dp">
+                <Switch
+                    android:id="@+id/chaveAnonimoResponder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/anonimo"
+                    android:checked="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_below="@id/layoutChave"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+
+                <Button
+                    android:id="@+id/btnEnviarResposta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginStart="24dp"
+                    android:background="@drawable/botao_azul"
+                    android:onClick="enviarPergunta"
+                    android:text="@string/btnEnviar" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
+
+

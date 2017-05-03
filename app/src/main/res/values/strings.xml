@@ -17,6 +17,7 @@
     <string name="nome_Perfil">Perfil</string>
     <string name="nome_Recomendadas">Perguntas Recomendadas</string>
     <string name="nome_Cadastro">Cadastro</string>
+    <string name="nome_responder">Responder</string>
 
     <!--Tags-->
     <string name="chkCinema">Cinema</string>
@@ -41,7 +42,7 @@
     <string name="btnCancelar">Cancelar</string>
     <string name="texto_pergunta">Escreva sua pergunta aqui!</string>
     <string name="texto_tag">Tags</string>
-
+    <string name="texto_responder">Escreva sua resposta aqui!</string>
 
 
     <!--STRINGS DO ALISSON-->
