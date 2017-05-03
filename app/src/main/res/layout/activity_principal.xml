@@ -57,7 +57,7 @@
                 android:id="@+id/btnPerguntar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/ic_perguntar"
+                android:background="@drawable/inc_perguntar"
                 android:layout_weight="1"/>
 
             <Button
@@ -65,7 +65,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@drawable/ic_pesquisar"
+                android:background="@drawable/inc_pesquisar"
                 android:layout_below="@+id/btnPerguntar"/>
 
             <Button
@@ -73,7 +73,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@drawable/ic_perfil"
+                android:background="@drawable/inc_perfil"
                 android:layout_below="@id/btnPesquisa" />
 
         </LinearLayout>
@@ -92,7 +92,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@drawable/ic_ranking"/>
+                android:background="@drawable/inc_ranking"/>
 
             <Button
                 android:id="@+id/btnMinhasPerguntas"
@@ -100,7 +100,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_below="@+id/btnRanking"
-                android:background="@drawable/ic_minhas_perguntas"/>
+                android:background="@drawable/inc_minhas_perguntas"/>
 
             <Button
                 android:id="@+id/btnRecomendadas"
@@ -108,7 +108,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_below="@+id/btnMinhasPerguntas"
-                android:background="@drawable/ic_recomendadas"/>
+                android:background="@drawable/inc_recomendadas"/>
 
         </LinearLayout>
 
