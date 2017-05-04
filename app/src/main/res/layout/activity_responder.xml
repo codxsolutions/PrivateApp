@@ -4,7 +4,7 @@
     android:id="@+id/activity_responder"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="br.com.private_codx.aprivate.ResponderActivity">
+    tools:context="br.com.private_codx.aprivate.views.ResponderActivity">
 
     <!--Toolbar-->
     <LinearLayout

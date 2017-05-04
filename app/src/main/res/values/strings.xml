@@ -43,6 +43,7 @@
     <string name="texto_pergunta">Escreva sua pergunta aqui!</string>
     <string name="texto_tag">Tags</string>
     <string name="texto_responder">Escreva sua resposta aqui!</string>
+    <string name="carregando">Carregando...</string>
 
 
     <!--STRINGS DO ALISSON-->

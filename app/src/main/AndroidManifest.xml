@@ -9,7 +9,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_logo"
+        android:icon="@mipmap/inc_logo"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
@@ -33,7 +33,7 @@
         <activity android:name=".views.fragments.cardView_perguntas" />
         <activity android:name=".views.fragments.recyclerView_perguntas" />
         <activity android:name=".views.FazerPergunta" />
-        <activity android:name=".ResponderActivity"></activity>
+        <activity android:name=".views.ResponderActivity"></activity>
     </application>
 
 </manifest>

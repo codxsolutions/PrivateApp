@@ -1,4 +1,4 @@
-package br.com.private_codx.aprivate;
+package br.com.private_codx.aprivate.views;
 /**
  * Created by Thiago on 03/05/2017.
  */
@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import br.com.private_codx.aprivate.R;
 
 public class ResponderActivity extends AppCompatActivity {
     //Variáveis
