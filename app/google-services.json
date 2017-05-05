@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "949583436450",
-    "firebase_url": "https://private-c76b2.firebaseio.com",
-    "project_id": "private-c76b2",
-    "storage_bucket": "private-c76b2.appspot.com"
+    "project_number": "424356533987",
+    "firebase_url": "https://privateapp-ca0aa.firebaseio.com",
+    "project_id": "privateapp-ca0aa",
+    "storage_bucket": "privateapp-ca0aa.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:949583436450:android:281f0b0e774179fe",
+        "mobilesdk_app_id": "1:424356533987:android:281f0b0e774179fe",
         "android_client_info": {
           "package_name": "br.com.private_codx.aprivate"
         }
       },
       "oauth_client": [
         {
-          "client_id": "949583436450-12jnk4c2ogd34cq1qp0t4qkam44m1s74.apps.googleusercontent.com",
+          "client_id": "424356533987-kcr1purdt93b3b2ibvdgab5lkcm4bk3u.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAqX0kyqv2g6HLUKer4-XbRtj0Rb1CkvVg"
+          "current_key": "AIzaSyAnFEEXXllpdjFxnR-N4rtMzWOHL29UBrk"
         }
       ],
       "services": {
