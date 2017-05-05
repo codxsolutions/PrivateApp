@@ -11,8 +11,8 @@
         android:id="@+id/toolbar_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_alignParentTop="true">
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar_responder"
@@ -28,8 +28,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="@string/nome_responder"
-                android:textSize="16sp"
-                />
+                android:textSize="16sp" />
 
         </android.support.v7.widget.Toolbar>
     </LinearLayout>
@@ -50,7 +49,7 @@
             android:paddingRight="15dp"
             android:paddingTop="20dp">
 
-        <!-- EditText(fazer pergunta) e TextView(quantidade caracteres) -->
+            <!-- EditText(fazer pergunta) e TextView(quantidade caracteres) -->
             <LinearLayout
                 android:id="@+id/layoutCaixaResponderP"
                 android:layout_width="match_parent"
@@ -62,9 +61,38 @@
                     android:layout_width="match_parent"
                     android:layout_height="177dp"
                     android:background="@drawable/caixa_editview"
-                    android:hint="(Pergunta vai estar aqui)"                android:textAlignment="center"
+                    android:hint="(Pergunta vai estar aqui)"
+                    android:textAlignment="center"
                     android:textColor="@color/branco"
-                    android:textSize="23sp"/>
+                    android:textSize="23sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layoutCaixaResponder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/layoutCaixaResponderP"
+                android:layout_marginTop="42dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editResposta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/caixa_editview"
+                    android:hint="@string/texto_responder"
+                    android:textAlignment="center"
+                    android:textColor="@color/branco"
+                    android:textSize="23sp" />
+
+                <TextView
+                    android:id="@+id/txtMensagem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right" />
             </LinearLayout>
 
             <!-- Switch(Chave Anonimo) -->
@@ -74,24 +102,26 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/layoutCaixaResponder"
                 android:layout_marginTop="20dp">
+
                 <Switch
                     android:id="@+id/chaveAnonimoResponder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/anonimo"
-                    android:checked="true"
                     android:layout_alignParentRight="true"
-                    android:layout_marginRight="15dp" />
+                    android:layout_marginRight="15dp"
+                    android:checked="true"
+                    android:text="@string/anonimo" />
             </RelativeLayout>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:gravity="center_horizontal"
-                android:orientation="horizontal"
                 android:layout_below="@id/layoutChave"
+                android:layout_marginBottom="20dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp">
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
 
                 <Button
                     android:id="@+id/btnEnviarResposta"
@@ -103,36 +133,7 @@
                     android:background="@drawable/botao_azul"
                     android:onClick="enviarPergunta"
                     android:text="@string/btnEnviar" />
-
             </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/layoutCaixaResponder"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="42dp"
-                android:layout_below="@+id/layoutCaixaResponderP"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true">
-
-                <EditText
-                    android:id="@+id/editPergunta"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/caixa_editview"
-                    android:hint="@string/texto_responder"                android:textAlignment="center"
-                    android:textColor="@color/branco"
-                    android:textSize="23sp"/>
-
-                <TextView
-                    android:id="@+id/txtMensagem"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="right" />
-
-            </LinearLayout>
-
         </RelativeLayout>
     </ScrollView>
 
