@@ -52,26 +52,19 @@
 
         <!-- EditText(fazer pergunta) e TextView(quantidade caracteres) -->
             <LinearLayout
-                android:id="@+id/layoutCaixaResponder"
+                android:id="@+id/layoutCaixaResponderP"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <EditText
-                    android:id="@+id/editPergunta"
+                <TextView
+                    android:id="@+id/textPergunta"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="177dp"
                     android:background="@drawable/caixa_editview"
-                    android:hint="@string/texto_responder"                android:textAlignment="center"
+                    android:hint="(Pergunta vai estar aqui)"                android:textAlignment="center"
                     android:textColor="@color/branco"
                     android:textSize="23sp"/>
-
-                <TextView
-                    android:id="@+id/txtMensagem"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="right" />
-
             </LinearLayout>
 
             <!-- Switch(Chave Anonimo) -->
@@ -110,6 +103,33 @@
                     android:background="@drawable/botao_azul"
                     android:onClick="enviarPergunta"
                     android:text="@string/btnEnviar" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutCaixaResponder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="42dp"
+                android:layout_below="@+id/layoutCaixaResponderP"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <EditText
+                    android:id="@+id/editPergunta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/caixa_editview"
+                    android:hint="@string/texto_responder"                android:textAlignment="center"
+                    android:textColor="@color/branco"
+                    android:textSize="23sp"/>
+
+                <TextView
+                    android:id="@+id/txtMensagem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right" />
 
             </LinearLayout>
 
