@@ -159,7 +159,7 @@ public class FazerPergunta extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "Escreva uma pergunta!", Toast.LENGTH_SHORT).show();
         } else {
             if (contSelecao > 0) { // verificando se existe checkBoxe selecionado
-                if (contSelecao < 3) {
+                if (contSelecao <= 3) {
                     tagSelecionadas.clear();
                     for (CheckBox chk : checkBoxes) {
                         boolean selecionado = chk.isChecked();
