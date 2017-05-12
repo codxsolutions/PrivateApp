@@ -19,7 +19,7 @@ public class Load_Activity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable(){
             @Override
             public void run(){
-                Intent homeIntent = new Intent(Load_Activity.this, ActivityPrincipal.class);
+                Intent homeIntent = new Intent(Load_Activity.this, CadastroActivity.class);
                 startActivity(homeIntent);
                 finish();
             }

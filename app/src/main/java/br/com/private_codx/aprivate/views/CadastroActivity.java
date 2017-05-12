@@ -10,10 +10,15 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 import br.com.private_codx.aprivate.R;
+
+import static android.R.attr.password;
 
 public class CadastroActivity extends AppCompatActivity {
     Toolbar aToolbar; //Declarando a Toolbar
@@ -94,10 +99,24 @@ public class CadastroActivity extends AppCompatActivity {
         senha=editSenha.getText().toString();
         confirmarSenha=editConfirmar.getText().toString();
 
-        if(senha!=confirmarSenha){
-            Toast.makeText(getApplicationContext(),"As senhas são diferentes!",Toast.LENGTH_LONG).show();
-        }
+        //if(senha!=confirmarSenha){
+        //    Toast.makeText(getApplicationContext(),"As senhas são diferentes!",Toast.LENGTH_LONG).show();
+        //}
 
+        //else{
+            mAuth.createUserWithEmailAndPassword(email, senha).addOnCompleteListener(this, new OnCompleteListener<AuthResult>(){
+                @Override
+                public void onComplete(@NonNull Task<AuthResult> task) {
+                    Log.d(TAG, "createUserWithEmail:onComplete:" + task.isSuccessful());
+                    //Em caso de erro.
+                    if (!task.isSuccessful()) {
+                        Toast.makeText(getApplicationContext(),"Falha ao cadastrar",Toast.LENGTH_SHORT).show();
+                    }
+                    else{
+                        Toast.makeText(getApplicationContext(),"Cadastro realizado com sucesso!",Toast.LENGTH_SHORT).show();
+                    }
+                }
+            });
+        //}
     }
-
 }
