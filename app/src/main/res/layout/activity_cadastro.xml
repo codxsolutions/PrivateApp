@@ -118,18 +118,6 @@
                 android:layout_marginBottom="16dp"
                 android:onClick="cadastrarUser"/>
 
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="125dp"
-            android:id="@+id/editNome"
-            android:textColor="@color/branco"
-            android:hint="Nome"
-            style="@style/Widget.AppCompat.EditText" />
-
     </RelativeLayout>
 
 

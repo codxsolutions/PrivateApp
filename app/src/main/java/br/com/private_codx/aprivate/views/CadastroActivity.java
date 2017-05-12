@@ -32,7 +32,6 @@ public class CadastroActivity extends AppCompatActivity {
     String email;
     String senha;
     String confirmarSenha;
-    String nome;
 
 
     private FirebaseAuth mAuth; //Declarando a instância de Auth do FireBase
@@ -50,7 +49,6 @@ public class CadastroActivity extends AppCompatActivity {
         aToolbar = (Toolbar)findViewById(R.id.toolbar_cadastro);
         setSupportActionBar(aToolbar);
 
-        editNome = (EditText) findViewById(R.id.editNome);
         editEmail = (EditText) findViewById(R.id.editEmail);
         editSenha = (EditText) findViewById(R.id.editSenha);
         editConfirmar = (EditText) findViewById(R.id.editConfirmar);
@@ -94,16 +92,11 @@ public class CadastroActivity extends AppCompatActivity {
     }
 
     public void cadastrarUser (View v){
-        nome=editNome.getText().toString();
         email=editEmail.getText().toString();
         senha=editSenha.getText().toString();
         confirmarSenha=editConfirmar.getText().toString();
 
-        //if(senha!=confirmarSenha){
-        //    Toast.makeText(getApplicationContext(),"As senhas são diferentes!",Toast.LENGTH_LONG).show();
-        //}
-
-        //else{
+        //FAZER A VALIDÇÃO (NÃO ESQUECER MONGOLZINHO)
             mAuth.createUserWithEmailAndPassword(email, senha).addOnCompleteListener(this, new OnCompleteListener<AuthResult>(){
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
@@ -117,6 +110,5 @@ public class CadastroActivity extends AppCompatActivity {
                     }
                 }
             });
-        //}
     }
 }
